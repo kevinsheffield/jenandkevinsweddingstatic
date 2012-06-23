@@ -1,1 +1,736 @@
-My github page
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+  <head>
+  <meta charset='utf-8' />
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+  <title>Home - Jen and Kevin's Wedding</title>  
+
+
+
+<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="/css/jquery.thumbnailScroller.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/css/themes/default/default.css" />
+<link rel="stylesheet" type="text/css" href="/css/nivo-slider.css" />
+
+<link rel="stylesheet" type="text/css" href="/css/lightview/lightview.css" />
+
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.gmap.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="/js/jquery.thumbnailScroller.js"></script>
+<!--[if lt IE 9]> <script type="text/javascript" src="/js/lightview/excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="/js/lightview/lightview.js"></script>
+
+<script type="text/javascript" src="/js/jquery.nivo.slider.pack.js"></script>
+
+
+<script type="text/javascript">
+
+
+function fadein(div) {
+    var divComplete = '#' + div + '-content';
+	$('#main-content').hide();
+	$('#ourstory-content').hide();
+	$('#photos-content').hide();
+	$('#weddingparty-content').hide();
+	$('#ceremony-content').hide();
+	$('#accommodations-content').hide();
+	$('#activities-content').hide();
+	$('#comments-content').hide();
+	$('#registry-content').hide();
+	$('#contacts-content').hide();
+	
+	$(divComplete).show();
+	
+	$('#main-li').removeClass('active');
+	$('#ourstory-li').removeClass('active');
+	$('#photos-li').removeClass('active');
+	$('#weddingparty-li').removeClass('active');
+	$('#ceremony-li').removeClass('active');
+	$('#accommodations-li').removeClass('active');
+	$('#activities-li').removeClass('active');
+	$('#comments-li').removeClass('active');
+	$('#comments-li').removeClass('active');
+	$('#registry-li').removeClass('active');
+	$('#' + div + '-li').addClass('active');
+	$('.pinkshellmap').gMap();
+	
+}
+var currentRotator = 1;
+var t;
+$(document).ready(function() {
+	var hash = window.location.hash.slice(1);
+	if(hash == '') hash = 'main';
+	fadein(hash);
+	$('#slider').nivoSlider({
+		effect: 'random',
+		controlNav: true,
+		directionNav: false,
+		pauseOnHover: false,
+		pauseTime: 5000
+	});
+	//$('#rotator').simpleRotator({time: 5000, transition: "slide"});
+	
+	//$('.pinkshellmap').gMap({ address : '275 Estero Boulevard, Fort Myers Beach, FL', zoom:15 });
+	//$('.pinkshellmap').gMap('addMarker', { address : '275 Estero Boulevard, Fort Myers Beach, FL' });
+	
+});
+
+
+  Lightview.setDefaultSkin('mac');
+</script>
+
+  <style>
+
+  .respond {
+    position: relative;
+  }
+  .photo-list>li {
+    float: left;
+    margin: 10px;
+  }
+  .main-wrapper {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .nivoSlider {
+    position:relative;
+    width:900px; /* Change this to your images width */
+    height:389px; /* Change this to your images height */
+    background:url(images/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+.theme-default .nivoSlider {
+  box-shadow : 0;
+  -moz-box-shadow: 0;
+  -webkit-box-shadow: 0;
+}
+.menu-container {
+  margin-top: 20px;
+}
+.menu-item {
+  float: left;
+  margin-right: 17px;
+}
+.menu-item>a {
+  color: #A6A6A6;
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
+}
+.menu-item>a:hover {
+  text-decoration: none;
+}
+
+.header {
+  padding-top: 0px;
+}
+
+.menu-item.active {
+  border-bottom-width: 1px; 
+  border-bottom-color: #E6E6E6; 
+  border-bottom-style: solid;
+}
+  </style>
+
+  
+</head>
+
+  <body link="#5cacc7" vlink="#3d8fab" alink="#666666" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+        <div class="main-wrapper" style="-webkit-box-shadow: 0 0 20px rgba(0,0,0,0.1),0px 0px 0px rgba(0,0,0,0); -moz-box-shadow: 0 0 20px rgba(0,0,0,0.1),0px 0px 0px rgba(0,0,0,0); box-shadow: 0 0 20px rgba(0,0,0,0.1),0px 0px 0px rgba(0,0,0,0); background: #FFFFFF; padding-bottom: 15px; margin-top: 20px; padding-top: 15px;">
+      <header id="header" class="header">
+        <div style="float: left;">
+	    		<h1 class="main-header">Jen & Kevin</h1>
+	    	</div>
+	    	<div style="float: right; padding-top: 10px; border-left-width: 2px; border-left-color: #B6B6B6; border-left-style: solid; padding-left: 45px; padding-bottom: 10px; padding-right: 10px;">
+	    		<h3 style="font-size: 28px; display: block; margin-bottom: 0px; text-align: center; padding: 0; line-height: 36px; letter-spacing: 0px;">
+	    			September 29th, 2012
+	    		</h3>
+	    		<h3 style="font-size: 28px; display: block; margin-bottom: 0px; text-align: center; padding: 0; line-height: 36px; letter-spacing: 0px;">
+	    			Pink Shell - Ft Myers Beach, FL
+	    		</h3>
+	    	</div>      </header>
+      <div style="clear:both;"></div>
+      
+	    <div class="tagline" style="margin-top: 10px;">
+	    	<div>
+	    		<h2 class="tagline-text" style="height: 35px;">
+	    		</h2>
+	    	</div>
+	    </div>
+	    <div class="slider-wrapper theme-default">
+	        <div class="ribbon"></div>
+		    <div id="slider" class="nivoSlider">
+		    	<img alt="Banner1" src="/assets/banner1-7f7654406445fd5b2ad9160c0098d737.jpg" />
+		    	<img alt="Banner2" src="/assets/banner2-8a69bc2bb8865af988c29888d701629a.jpg" />
+		    	<img alt="Banner3" src="/assets/banner3-ef147a57b18988f2f5d1ac540ba6397a.jpg" />
+		    	<img alt="Banner4" src="/assets/banner4-99a3341ae6d0c811d5e5bca08c816f9d.jpg" />
+		    	<img alt="Banner5" src="/assets/banner5-2fa63aec8dceb1519d5dbb09f558df71.jpg" />
+		    	<img alt="Banner6" src="/assets/banner6-0475ccc7fb6b7b0acb743d8b64e0ca7e.jpg" />
+		    	<img alt="Banner7" src="/assets/banner7-d055849d8fb64967b15f54d71110123e.jpg" />
+		    	<img alt="Banner8" src="/assets/banner8-ce473e0ec8f84b581fa2f954c5dc76ff.jpg" />
+		    	<img alt="Banner9" src="/assets/banner9-d48e0b82470d99ef9c82d2202dc44959.jpg" />
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	    <div class="tagline">
+	    	<div>
+	    		<h2 class="tagline-text" style="height: 35px;">
+	    		</h2>
+	    	</div>
+	    </div>    	
+      <div style="clear:both;"></div>
+      	
+	    <div class="menu-container">
+    		<ul style="list-style: none;" class="menu">
+              <li class="menu-item active" id="main-li"><a href="#" onclick="javascript:fadein('main');">home</a></li>
+              <li class="menu-item" id="ourstory-li"><a href="#ourstory" onclick="javascript:fadein('ourstory');">our story</a></li>
+              <li class="menu-item" id="photos-li"><a href="#photos" onclick="javascript:fadein('photos');">photos</a></li>
+              <li class="menu-item" id="weddingparty-li"><a href="#weddingparty" onclick="javascript:fadein('weddingparty');">wedding party</a></li>
+              <li class="menu-item" id="ceremony-li"><a href="#ceremony" onclick="javascript:fadein('ceremony');">ceremony and reception</a></li>
+              <li class="menu-item" id="accommodations-li"><a href="#accommodations" onclick="javascript:fadein('accommodations');">accommodations</a></li>
+              <li class="menu-item" id="activities-li"><a href="#activities" onclick="javascript:fadein('activities');">activities</a></li>
+              <li class="menu-item" id="registry-li"><a href="#registry" onclick="javascript:fadein('registry');">registry</a></li>
+              <li class="menu-item" id="comments-li"><a href="#comments" onclick="javascript:fadein('comments');">comments</a></li>
+              <li class="menu-item" id="contacts-li"><a href="#contacts" onclick="javascript:fadein('contacts');">contacts</a></li>
+    		</ul>
+    	</div>      <section id="page">
+        
+	    	<div class="content-block" id="main-content">
+	    		<div>
+    			<div class="h3bg"><h3>home</h3></div>
+    			<div class="activities">
+  					<p>We are so very grateful to have each and everyone of you in our lives. With your guidance, love, and support, we have become the couple we are today. We look forward to sharing with you the celebration of our love and commitment as we become husband and wife. See you on 9/29/12!</p>
+<p>Much Love and Happiness, <br />Jen and Kevin</p>
+    			</div>
+	    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="ourstory-content">
+	    		<div>
+        			
+    			<div class="h3bg"><h3>about us</h3></div>
+    			<div class="aboutus">
+    				<div class="story">
+    					<h5>BRIDE</h5>
+    					<h4>Jennifer Lauren Tears</h4>
+    					<p>
+                            <p>I was not really looking to meet anyone, especially at a party. As cynical as it may sound, it was just my being practical. It was the end of my second to last semester, and I would soon be off to face what would become the bane of my existence... law school. </p>
+<p>Anyway, I almost did not make it to the party; the person who was to be our designated driver decided that the game of "pulling straws" was unfair. (We had drawn straws to determine who was to be the evening's d.d.). I am not sure how it could have been anymore fair? However, after what seemed like an eternity of whining, from a grown man, mind you, the d.d. was soon "convinced" to act as such. We finally arrived. </p>
+<p>Call it fate, call it destiny, Kev and I were meant to meet at this party. During a game of flip cup, and influenced by a cup or two of "liquid courage," I began what I had initially intended to be smack talk with a man dressed to the "tee". I became particularly intrigued by this man who was as equally able in the smack talk as I. Soon thereafter, what had begun as smack talk soon turned into flirting.  I have never been so forward with a man as I was with Kev... I actually invited myself on a "date" with him. There was just something about him that made him worth the effort... made him worth moving beyond what I believed to be my comfort zone. I was absolutely smitten! </p>
+<p>Our first date was the longest date I have ever been on. Not that it was boring... it was not boring by any means, but it lasted well over 10 hours. I felt comfortable with Kevin, I felt the need to be around him at all times. Our relationship grew exponentially over the course of a few months, but I always had a lingering fear... that we would go our separate ways upon graduation. However, I should have never been fearful. Kevin loved me more than anything in the world and would follow me to the ends of the earth as he has done and continues to do. I love him with equal passion and I only wish I could show him how grateful I am for his loving and wanting to love me. </p>
+<p>Kev is my rock, my unyielding support, my love, and my best friend. As cliche as it sounds, he completes me! I continue to love him more and more each day and I cannot wait to spend my life with him as his wife.</p>
+    					</p>
+    				</div>
+    				<div class="story">
+    					<h5>GROOM</h5>
+    					<h4>Kevin Randall Sheffield</h4>
+    					<p>
+                            <p>There she was.  It was just a party with some guys I played poker with often, but there she was.  She is playing what seemed to be the longest game of beer pong ever.  I still remember seeing that amazing smile for the first time.  For some reason it was decided that everyone should play a game of flip cup with guys versus girls being the teams.  I notice she is captaining the women's team and hurry to go stand next to her.  She starts talking smack to me and the games commence.  They go by way too quickly, but I make the most of it getting to know her (in between smack talk of my own of course).  After, one of her friends felt the need to introduce her to me several times, as if I would or even could forget her by then.  We danced and talked the night away, well at least until her roommates decided to leave the party and wouldn't leave her in the hands of a stranger.  </p>
+<p>Luckily she had already invited herself to free beer and nachos the following day.  I couldn't let that be our first date, so we also went to a movie and then dinner after.  It might have been a long date, but I enjoyed every second of it.  She was already done with exams for the fall semester, but she stayed in Gainesville just to spend time with me.  </p>
+<p>Finals, studying, senior project... the last few months of school certainly weren't easy even without her gumming up the works.  I hated leaving her and couldn't wait to return.  Every college grad has to make the decision of "where to now?", for me it was decided on a "reading day" many months prior.</p>
+<p>She gave me courage that night. </p>
+<p>A shy computer nerd like me doesn't approach the girl; he certainly doesn't get the girl.  He doesn't move halfway across the country; he doesn't travel halfway across the world.   For 7 years she has been by my side, taking on the world with me.  We have done so much in those years, and I can't wait to see what the next 80 have in store for us.</p>
+<p>bq. I've always been a sucker for a brown eyed, punk rock girl,<br />and for her I'd shoot the world.</p>
+    					</p>
+    				</div>
+    			</div>
+    			<!--<div style="margin-left: auto; margin-right: auto;"><h3 style="margin-left: auto; margin-right: auto; text-align: center; display: block;">the proposal</h3></div>
+    			<div class="proposal">
+    					<p>
+                            <p>I had the ring for what seemed an eternity.  It was probably only a week and a half but it seemed forever.  No idea I had for the proposal seemed grand enough and every day the excitement I had continued to boil.  </p>
+<p>It was a Monday, just a random Monday.  I tried to play it a bit close to the vest and just invite her to go to one of our favorite sushi places for dinner.  After we go to Lowdermilk Park to watch the sun set on the Gulf.  The ring in my shirt pocket</p>
+    					</p>
+    			</div>-->	    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="photos-content">
+	    		<div>
+        			<div class="h3bg"><h3 style="margin-bottom: 15px;">photos (a selection)</h3></div>
+<ul style="list-style: none;" class="photo-list">
+	<li>
+	    <a href="http://farm6.staticflickr.com/5312/7173832060_480767382a_b.jpg" class="lightview" data-lightview-group="engagementphotos"><img src="http://farm6.staticflickr.com/5312/7173832060_480767382a_s.jpg"></a>
+	</li>
+	<li>
+		<a href="http://farm6.staticflickr.com/5079/7173847534_890267d01a_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+			<img src="http://farm6.staticflickr.com/5079/7173847534_890267d01a_s.jpg" />
+		</a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7215/7173850346_c3bae604c5_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7215/7173850346_c3bae604c5_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm9.staticflickr.com/8014/7173851452_1ef31de023_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm9.staticflickr.com/8014/7173851452_1ef31de023_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5279/7173849002_488bf2f9cd_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5279/7173849002_488bf2f9cd_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5279/7173849002_488bf2f9cd_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5279/7173849002_488bf2f9cd_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7222/7173841976_5eaee054f2_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7222/7173841976_5eaee054f2_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7072/7173843684_0340801bef_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7072/7173843684_0340801bef_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5035/7173849772_4da535ed30_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5035/7173849772_4da535ed30_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm9.staticflickr.com/8017/7173842470_61c6f07094_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm9.staticflickr.com/8017/7173842470_61c6f07094_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm9.staticflickr.com/8024/7173840096_4c7d66ae1b_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm9.staticflickr.com/8024/7173840096_4c7d66ae1b_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7239/7173848608_f39b27e91d_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7239/7173848608_f39b27e91d_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7105/7173853562_6325f6a9d4_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7105/7173853562_6325f6a9d4_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7080/7173839546_7e3067b5a2_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7080/7173839546_7e3067b5a2_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7212/7173844512_d041a86c40_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7212/7173844512_d041a86c40_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5334/7173847066_d071627d98_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5334/7173847066_d071627d98_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5320/7173846232_d774a943e3_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5320/7173846232_d774a943e3_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7091/7173846598_501821bfb6_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7091/7173846598_501821bfb6_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7090/7173841140_c2f4248597_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7090/7173841140_c2f4248597_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7233/7173838596_cd3b28be41_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7233/7173838596_cd3b28be41_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7083/7173852314_bbb2fd7204_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7083/7173852314_bbb2fd7204_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5451/7173845716_e774a080d0_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5451/7173845716_e774a080d0_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5040/7173840518_b59a4478ae_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5040/7173840518_b59a4478ae_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5151/7173848220_5f7cd127d9_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5151/7173848220_5f7cd127d9_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7214/7173845200_d92ac48b47_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7214/7173845200_d92ac48b47_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm9.staticflickr.com/8144/7173853048_b4de0336c9_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm9.staticflickr.com/8144/7173853048_b4de0336c9_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5443/7173850906_f83f13e4f6_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5443/7173850906_f83f13e4f6_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7214/7173840814_d7c92410b4_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7214/7173840814_d7c92410b4_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm9.staticflickr.com/8163/7173839054_41aaaa942a_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm9.staticflickr.com/8163/7173839054_41aaaa942a_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm9.staticflickr.com/8022/7173851954_1fe01de0fd_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm9.staticflickr.com/8022/7173851954_1fe01de0fd_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5079/7173837428_902e4c671b_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5079/7173837428_902e4c671b_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5331/7173852702_97376f192a_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5331/7173852702_97376f192a_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7211/7173847834_0114bab325_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7211/7173847834_0114bab325_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7245/7173854062_ac333da72b_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7245/7173854062_ac333da72b_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7094/7173837734_e922553e33_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7094/7173837734_e922553e33_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7234/7173843998_a1d4af901f_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7234/7173843998_a1d4af901f_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5444/7173838146_0f48ac2d57_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5444/7173838146_0f48ac2d57_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm9.staticflickr.com/8141/7173841496_f9750db73e_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm9.staticflickr.com/8141/7173841496_f9750db73e_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7093/7173844834_ac1a5c942b_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7093/7173844834_ac1a5c942b_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm8.staticflickr.com/7240/7173849386_16de1f91c0_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm8.staticflickr.com/7240/7173849386_16de1f91c0_s.jpg" />
+	    </a>
+	</li>
+	<li>
+	    <a href="http://farm6.staticflickr.com/5320/7173843236_957c835d5b_b.jpg" class="lightview" data-lightview-group="engagementphotos">
+	        <img src="http://farm6.staticflickr.com/5320/7173843236_957c835d5b_s.jpg" />
+	    </a>
+	</li>
+</ul>
+<div class="photosby" style="clear: both; margin-left: 35px;">Photos taken by Austin Trenholm of <a href="http://www.trenholmphoto.com/">Trenholm Photography</a>.</div>
+	    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="weddingparty-content">
+	    		<div>
+        			
+    			<div class="h3bg"><h3 style="margin-bottom: 15px;">wedding party</h3></div>
+    			<div class="weddingparty">
+    				<div style="margin-bottom: 10px;">
+    					<div class="bridesmaids"><h5>BRIDESMAIDS</h5></div>
+    					<div class="groomsmen"><h5>GROOMSMEN</h5></div>
+    					<div style="clear: both;"></div>
+    				</div>
+    				<div style="margin-bottom: 10px;">
+    					<div class="bridesmaids">
+    						<img src="/assets/images/stephanie.jpg" class="party-photo" />
+    						<div class="party-person">
+	    						<h4>Stephanie Tears</h4>
+	    						<h6>maid of honor</h6>
+                                <p>Throughout our many years together (as if I actually had a choice), she has gone above and beyond in the fulfillment of her "little sister duties"... whether it was to annoy the crap out of me or sucker me into making a "donation" to her grandiose collection of purses. In all seriousness though, Stephie is not only family, she is my best friend. She is my confidant, my unyielding support, my sister. I am so fortunate to have been part of her journey towards becoming an incredibly smart and successful young woman!</p>
+    						</div>
+    					</div>
+    					<div class="groomsmen">
+    						<img src="/assets/images/charlie.jpg" class="party-photo" />
+    						<div class="party-person">
+    							<h4>Charlie LeBrun</h4>
+    							<h6>best man</h6>
+                                <p>Jen once asked my parents for embarrassing stories about me and they came up with nothing more than fun stories about my childhood battles with measurement abbreviations (seriously though ounces to oz?).  But you aren't best friends with a guy through high school and beyond without getting into enough trouble to make for many a good story.  Even though life has us in different parts of the state, Charlie is a big reason I am who I am today.</p>
+    						</div>
+    					</div>
+    					<div style="clear:both;"></div>
+    				</div>
+    				<div style="margin-bottom: 10px;">
+    					<div class="bridesmaids">
+    						<img src="/assets/images/katie.jpg" class="party-photo" />
+    						<div class="party-person">
+    							<h4>Katie Grace</h4>
+                                <p>I have always wanted an older sister and Katie has been just that. When I was younger, she most certainly acted like an older sister by "playfully" taunting and teasing me. However, as we grew older, she provided me with the guidance and support only a "big sister" could provide. Katie is confident and outgoing, someone I truly admire.</p>
+    						</div>
+    					</div>
+    					<div class="groomsmen" style="min-height: 195px;">
+    						<img src="/assets/images/david.jpg" class="party-photo" />
+    						<div class="party-person">
+    							<h4>David Barber</h4>
+                                <p>David has always been the wild card in the group.  You never know what is next and you know he will always be game for anything.  I am quite sure he is the most easy going guy I know and I am fortunate to have had many a good time with him.</p>
+    						</div>
+    					</div>
+    					<div style="clear: both;"></div>
+    				</div>
+    				<div style="margin-bottom: 10px;">
+    					<div class="bridesmaids">
+    						<img src="/assets/images/melissa.jpg" class="party-photo" />
+    						<div class="party-person">
+    							<h4>Melissa Tablante</h4>
+                                <p>I was more than satisfied having one little sister, but then I got two. Although Melis and I are not related by blood, I consider her my other baby sister (Melis could very well be my sister since she and Stephie are like twins, inseparable since birth). LIke my own sister, I am so proud of Melis! Melis is, by far, the most artistically and fashionably talented person I know!</p>
+    						</div>
+    					</div>
+    					<div class="groomsmen">
+    						<img src="/assets/images/jeremy.jpg" class="party-photo" />
+    						<div class="party-person">
+    							<h4>Jeremy Bogdany</h4>
+                                <p>After college I picked up my life and followed Jen to Arlington, Virginia.  I spent about 3 months finding a job, and have spent the last 6+ years getting to spend my days with such a great friend.  Whether is be talking about politics, playing video games or, strangely enough, just working together, Jeremy has added many enjoyable times in my life while also being a someone I can bring my problems to.</p>
+    						</div>
+    					</div>
+    					<div style="clear: both;"></div>
+    				</div>
+    				<div style="margin-bottom: 10px;">
+    					<div class="bridesmaids">
+    						<img src="/assets/images/katie-rm.jpg" class="party-photo" />
+    						<div class="party-person">
+	    						<h4>Katie Goodemote</h4>
+                                <p>Katie was my first... college roommate that is. Although we barely saw each other during our first year, all that soon changed when we, along with Amanda, became the Girls of 121! Katie is a true master of knit; her knitting creations are magnificent! Had Katie not cultivated my love for the needles, a relaxing experience of sorts, I would have lost my sanity long ago.</p>
+    						</div>
+    					</div>
+    					<div class="groomsmen">
+    						<img src="/assets/images/ram.jpg" class="party-photo" />
+    						<div class="party-person">
+    							<h4>Ram Guttikonda</h4>
+                                <p>Most people aren't lucky enough to count their manager at work as one of their closest friends, but most people don't have a manager like Ram.  Ram will always have your back, tell it to you straight if you are being a fool and no matter what laugh with you over drinks after.  I have learned just as much in my personal life from Ram as I have grown as a professional under him.</p>
+    						</div>
+    					</div>
+    					<div style="clear: both;"></div>
+    				</div>
+    				<div style="margin-bottom: 10px;">
+    					<div class="bridesmaids">
+    						<img src="/assets/images/amanda.jpg" class="party-photo" />
+    						<div class="party-person">
+	    						<h4>Amanda Childs</h4>
+                                <p>Amanda and I have had some incredible adventures together from drinking "water" straight from the bottle to eating nothing but meat and cabbage during our "low carb" days to having "killer" Halloween parties with our other third, Katie. Amanda not only helped to make my college experience memorable, but the many years thereafter. I am so lucky to have been part of her recent wedding and even more so since she has agreed to be a part of mine.</p>
+    						</div>
+    					</div>
+    					<div class="groomsmen">
+    						<img src="/assets/images/lavya.jpg" class="party-photo" />
+    						<div class="party-person">
+    							<h4>Lavya Singh</h4>
+                                <p>A few years back, we interviewed this guy for a position at work.  I had the impression at first he was going to be mild-mannered and quiet...  then I got to know the guy we dubbed Johnnie Walker.  Lavya has added many good times and a ton of motivation in my life.  I am looking forward to having you down here, Lavya.  I'll make sure there is a bottle of Johnnie just for you.</p>
+    						</div>
+    					</div>
+    					<div style="clear: both;"></div>
+    				</div>
+    				<div>
+    					<div class="bridesmaids">
+    						<img src="/assets/images/tammy.jpg" class="party-photo" />
+    						<div class="party-person"> 
+    							<h4>Tammy Hutchins</h4>   				
+                                <p>A relationship that started off as that of colleagues/co-workers, soon blossomed into that of friends. Tammy and I have so much in common... our ideals and values, the importance we place on familial relationships, and both of our fiances just happen to be lovers of the "videogame." I am ecstatic that Tammy will serve as my bridesmaid and I can't wait to be one of hers!</p>
+    						</div>
+    					</div>
+    					<div class="groomsmen">
+    						<img src="/assets/images/andy.jpg" class="party-photo" />
+    						<div class="party-person">
+    							<h4>Andy Hebert</h4>
+                                <p>A few years ago, I moved down to Naples with Jen.  With friends and family so far away,  Andy helped make this crazy place feel a bit more like home.  We didn't get to go fishing nearly enough while he was still in Florida, but hopefully we can carve some time out soon while he is down for our wedding or we are up for Tammy and his later.</p>
+    						</div>
+    					</div>
+    					<div style="clear:both;"></div>
+    				</div>
+    			</div>	    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="ceremony-content">
+	    		<div>
+        			
+    			<div class="h3bg"><h3>ceremony and reception</h3></div>
+    			<div class="ceremony">
+    				<div style="float:left; width: 43%; padding-left: 15px;">
+                            <p><em>Pink Shell Beach Resort &amp; Marina</em>
+</p>
+<p>Both the ceremony and reception are to take place on the premises of the Pink Shell Beach Resort &amp; Marina. The Pink Shell is located on the white sand beaches of Estero Island at 275 Estero Boulevard, Fort Myers Beach, Florida 33931. </p>
+<p><em>Ceremony</em>
+</p>
+<p>The ceremony will be held on the private beaches of the Pink Shell Resort. The ceremony shall begin at 5:00 p.m. The ceremony will most surely be memorable with the backdrop of a setting sun on the Gulf of Mexico.</p>
+<p><em>Reception</em>
+</p>
+<p>A poolside cocktail hour shall immediately follow the ceremony. Guests will enjoy hor d'ouvres and cocktails, of course. Following cocktail hour, guests will travel upstairs to the Captiva Ballroom. While enjoying dining and dancing, guests will marvel at the views of the Gulf of Mexico just outside the ballroom windows.</p>
+    				</div>
+    				<div style="float:right; padding-right: 10px; padding-top: 30px;">
+    				<img src="http://maps.googleapis.com/maps/api/staticmap?center=26.460354,-81.964188&zoom=14&size=450x300&markers=color:blue%7Clabel:Pink%20Shell%7C26.460354,-81.964188&sensor=false" /><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Pink+Shell,+Fort+Myers+Beach,+FL&amp;aq=0&amp;oq=pink+shell&amp;sll=37.0625,-95.677068&amp;sspn=62.443704,53.525391&amp;ie=UTF8&amp;hq=Pink+Shell,+Fort+Myers+Beach,+FL&amp;t=m&amp;ll=26.460354,-81.964188&amp;spn=0.023052,0.047121&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+    				</div>
+    			</div>	    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="accommodations-content">
+	    		<div>
+        			
+    			<div class="h3bg"><h3>accommodations</h3></div> 			
+    			<div class="accommodations">
+    				<div style="float:left; width: 43%; padding-left: 15px;">
+                            <p><em>Pink Shell Beach Resort and Marina</em>
+</p>
+<p><a href="http://www.pinkshell.com" title="http://www.pinkshell.com" target="_blank">http://www.pinkshell.com</a>
+</p>
+<p>"Situated on 1,500 feet of sugary white sand at the tip of Estero Island, Pink Shell Beach Resort &amp; Marina is the only choice of Fort Myers Beach hotels that offers four star Fort Myers Beach hotel accommodations all overlooking the Gulf of Mexico in a playful and friendly atmosphere. Located along the beaches of Fort Myers and Sanibel, with sweeping gulf and bay views, Pink Shell is the premier choice of Fort Myers Beach Florida hotels for guests seeking adventure, relaxation, and fun."</p>
+<p>The Pink Shell is a stunning resort! Each and every room offers an unobstructed view of the Gulf! We have reserved a block of rooms at the Pink Shell, available to all of our guests at significantly discounted prices. Please note that if the block does fill up, Pink Shell will continue to honor the discounted rates, but at a first come, first basis (i.e.- the availability of a room may not be guaranteed). So, make your reservations soon! When is the next time you are going to get stunning, oceanfront rooms at these incredible prices?!?!?</p>
+<p>To make reservations, please call 1-800-237-5786 and mention the "Tears-Sheffield Wedding" to receive the discounted rates below. Please make your reservations before August 29, 2012 to ensure the availability of these rates. </p>
+<p><em>Rooms &amp; Rates</em>
+</p>
+<p>Each room has a direct view of the stunning Gulf of Mexico and comes with a spacious, screened, furnished lanai. Other than the Sanibel View Studios, which features a kitchenette, all Villas come equipped with a fully functional kitchen with granite countertops and premium quality housewares and kitchen appliances.</p>
+<ul><li>Sanibel View Studios- $89.00; These accommodations feature either one king bed or two queen beds and one bathroom.</li>
+<li>One Bedroom Captiva Villa- $113.00; These condominium style units feature either a king bed or two queen beds and a pull out sofa.</li>
+<li>One Bedroom White Sand Villas- $113.00; These units feature a king bed and a pull out sofa.</li>
+<li>Two Bedroom White Sand Villas- $149.00; These units feature a king bed in the master and two double beds in the guest room. More importantly, each bedroom comes with a private, en-suite bathroom.</li>
+</ul>
+
+
+
+<p><em>Please note that all rates are subject to applicable taxes and resort fees (such fees cover the cost of certain resort amenities including, but not limited to, access to the fitness center, daily newspaper, wireless internet access, beach and pool towels, unlimited domestic long distance/local phone calls, unlimited usage of eucalyptus steam room, and complimentary parking).</em>
+</p>
+    				</div>
+    				<div style="float:right; padding-top: 18px; padding-right: 10px;">
+    				<img src="http://maps.googleapis.com/maps/api/staticmap?center=26.460354,-81.964188&zoom=14&size=450x300&markers=color:blue%7Clabel:Pink%20Shell%7C26.460354,-81.964188&sensor=false" /><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Pink+Shell,+Fort+Myers+Beach,+FL&amp;aq=0&amp;oq=pink+shell&amp;sll=37.0625,-95.677068&amp;sspn=62.443704,53.525391&amp;ie=UTF8&amp;hq=Pink+Shell,+Fort+Myers+Beach,+FL&amp;t=m&amp;ll=26.460354,-81.964188&amp;spn=0.023052,0.047121&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small><br />
+    				<img src="http://farm5.staticflickr.com/4099/4866604584_30ac9ec0c9.jpg" style="width: 450px; margin-top: 67px;" />
+    				<br />
+    				<img src="http://farm5.staticflickr.com/4094/4865985483_ddc4df6ffd.jpg" style="width: 450px; margin-top: 82px;" />
+    				</div>
+    			</div>
+    				    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="activities-content">
+	    		<div>
+        			
+    			<div class="h3bg"><h3>activities</h3></div>
+    			<div class="activities">
+                            <p><em>Pink Shell Beach Resort &amp; Marina Activities</em>
+</p>
+<p>Here are just some of the onsite services and activities offered at the Pink Shell....</p>
+<ul><li>Three heated swimming pools</li>
+<li>200-foot fishing pier</li>
+<li>Sail and powerboat rentals</li>
+<li>Kidds Kampp(r) for children</li>
+<li>Fishing</li>
+<li>Butterfly garden</li>
+<li>Spa facilities</li>
+<li>Beach volleyball</li>
+<li>Lounges, umbrellas, and beach chairs</li>
+<li>Two full-service restaurants</li>
+<li>Pool bar and grille</li>
+<li>Two retail outlets</li>
+</ul>
+<p><em>Ft. Myers Beach Activities and Attractions</em>
+</p>
+<p>Ft. Myers Beach offers a variety of activities and attractions. Here are just a few of the highly ranked activities and attractions, as rated by TripAdvisor reviewers, that Ft. Myers Beach has to offer....</p>
+<ul><li>Sunset Ride Private Dolphin Charters- <a href="http://www.sunsetride.com/" title="http://www.sunsetride.com/" target="_blank">http://www.sunsetride.com/</a>&#160;</li>
+<li>Good Time Charters and Tours- <a href="http://www.goodtimecharter.com/" title="http://www.goodtimecharter.com/" target="_blank">http://www.goodtimecharter.com/</a>&#160;</li>
+<li>Holiday Water Sports- <a href="http://www.holidaywatersportsfmb.com/" title="http://www.holidaywatersportsfmb.com/" target="_blank">http://www.holidaywatersportsfmb.com/</a>&#160;</li>
+<li>Lovers Key State Park- <a href="http://www.floridastateparks.org/loverskey/" title="http://www.floridastateparks.org/loverskey/" target="_blank">http://www.floridastateparks.org/loverskey/</a>&#160;</li>
+<li>Matanzas Pass Preserve- <a href="http://friendsofmatanzaspasspreserve.org/" title="http://friendsofmatanzaspasspreserve.org/" target="_blank">http://friendsofmatanzaspasspreserve.org/</a>&#160;</li>
+<li>Smugglers Cove Adventure Golf- <a href="http://www.smugglersgolf.com/" title="http://www.smugglersgolf.com/" target="_blank">http://www.smugglersgolf.com/</a>&#160;</li>
+<li>Ostego Bay Marine Science Center- <a href="http://www.ostegobay.org/" title="http://www.ostegobay.org/" target="_blank">http://www.ostegobay.org/</a>&#160;</li>
+<li>Mound House- <a href="http://www.moundhouse.org/" title="http://www.moundhouse.org/" target="_blank">http://www.moundhouse.org/</a>
+</li>
+</ul>
+    			</div>	    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="comments-content">
+	    		<div>
+        			<div class="h3bg"><h3 style="margin-bottom: 15px;">comments</h3></div>
+<div class="activities">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jenandkevinswedding'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">these comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>	    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="registry-content">
+	    		<div>
+        			
+    			<div class="h3bg"><h3>registry</h3></div>
+    			<div class="activities" style="font-size: 20px; font-weight: 200;">
+                            <p>Coming soon...</p>
+    			</div>	    		</div>
+	    	</div>
+	    	<div style="display:none;" class="content-block" id="contacts-content">
+	    		<div>
+        			
+    			<div class="h3bg"><h3>contacts</h3></div>
+    			<div class="activities" style="font-size: 20px; font-weight: 200;">
+    				If you have any questions, please email us at <a href="mailto:jenandkevinswedding@gmail.com">jenandkevinswedding@gmail.com</a>.
+    			</div>	    		</div>
+	    	</div>
+		<div style="clear: both;"></div>
+      </section>
+    </div>
+      <footer>
+        
+	<div class="footer">
+		&copy;2012 Kevin Sheffield. All rights reserved.
+	</div>      
+</footer>
+    
+
+  </body>
+</html>

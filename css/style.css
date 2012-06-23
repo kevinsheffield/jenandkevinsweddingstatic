@@ -1,0 +1,249 @@
+html {
+    -webkit-text-size-adjust: none; 
+}
+
+body {
+	background: #F6F6F6;
+	background: #D8E0CE;
+}
+
+p {
+	font-weight: 200;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: justify;
+}
+
+#nav-container {
+	width: 880px;
+}
+
+.header {
+	padding-top: 50px;
+}
+
+.main-header {
+	line-height:92px; 
+	/*font-size: 105px;*/ 
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	/*font-family: 'Josefin Sans', sans-serif;*/
+	font-family: 'HelveticaNeueRegular', Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 95px;
+}
+
+.tagline {
+	background-color: #680044;
+}
+
+.tagline-text {
+	color: white; 
+	font-size: 21px; 
+	font-weight: 100; 
+	letter-spacing: 0px; 
+	line-height: 35px; 
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	padding-left: 8px;
+	
+	font-family: 'HelveticaNeueRegular', Helvetica, sans-serif;
+}
+
+.respond {
+	display:block;
+	max-width: 100%; 
+	min-width: 100%;
+	margin-left: auto; 
+	margin-right: auto; 
+	padding-bottom: 20px;
+}
+
+.content-block {
+	float: left;
+	width: 100%;
+}
+
+h3 {
+	/*font-family: 'MillerTextOT-RgIt', Helvetica, sans-serif; */
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 36px; 
+	/*font-weight: 400;*/
+	font-weight: 100; 
+	letter-spacing: -1px;
+	padding: 12px 20px 10px 8px; 
+	margin-bottom: 15px;
+	text-shadow: 0px 0px 1px #EEE;
+	background: white;
+	display: inline;
+	padding-right: 20px;
+	
+	font-family: 'HelveticaNeueRegular', Helvetica, sans-serif;
+}
+
+.h3bg {
+	background: url(images/h3bg.png) repeat-x;
+	background-position: 0 50%;
+	display: block;
+	width: 99%;
+	padding: 20px 0 20px 0;
+}
+
+h5 {
+	font-size: 24px;
+	line-height: 26px;
+	font-weight: 200;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 22px;
+	font-weight: 200;
+}
+
+h2 {
+	font-weight: 100;
+	font-size: 28px;
+	text-align: center;
+	
+	font-family: 'HelveticaNeueRegular', Helvetica, sans-serif;
+}
+
+.aboutus {
+	float: left; 
+	position: relative;
+}
+
+.story {
+	float: left; 
+	margin: 0 20px 0; 
+	position: relative; 
+	width: 410px;
+	text-align: justify;
+}
+
+.weddingparty {
+	float: left; 
+	position: relative;
+	text-align: justify;
+}
+
+.bridesmaids {
+	margin: 0px; 
+	margin-left: 18px;
+	margin-right: 18px; 
+	float: left; 
+	width: 410px; 
+	list-style-type: none;
+}
+
+.groomsmen {
+	margin: 0px; 
+	margin-right: 18px; 
+	margin-left: 18px;
+	float: left; 
+	width: 410px; 
+	list-style-type: none;
+}
+
+.party-photo {
+	float: left;
+	margin-top: 3px;
+}
+
+.party-person {
+	padding-left: 153px;
+}
+
+.bridesmaids > li {
+	margin-bottom: 10px;
+}
+
+.groomsmen > li {
+	margin-bottom: 10px;
+}
+
+.bridesmaids * h4 {
+	margin-bottom: 10px;
+}
+
+.groomsmen * h4 {
+	margin-bottom: 10px;
+}
+
+h4 {
+	line-height: 20px;
+}
+
+.rg-view {
+	display: none;
+}
+
+.respond {
+	padding-bottom: 0px;
+}
+
+.footer {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	color: gray;
+	height: 30px;
+	margin-top: 8px;
+}
+
+.activities {
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+@media all and (max-device-width: 480px)
+{
+
+.main-header {
+	font-family: 'HelveticaNeue-UltraLight', Helvetica, sans-serif;
+	font-weight: 100;
+}
+
+.tagline-text {
+	font-family: 'HelveticaNeue-UltraLight', Helvetica, sans-serif;
+	font-weight: 100;
+}
+
+h3 {
+	font-family: 'HelveticaNeue-UltraLight', Helvetica, sans-serif;
+	font-weight: 100;
+}
+
+
+}
+
+/* FONTS
+***************************************************************************************/
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url('helveticaneue-ultralight.eot');
+    src: url('helveticaneue-ultralight.eot?#iefix') format('embedded-opentype'),
+         url('helveticaneue-ultralight.woff') format('woff'),
+         url('helveticaneue.ttf') format('truetype'),
+         url('helveticaneue-ultralight.svg#HelveticaNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'MillerTextOT-RgIt';
+	src: url('MillerTextOT-RgIt.eot');
+	src: local('â˜º'), url('MillerTextOT-RgIt.woff') format('woff'), 
+	url('MillerTextOT-RgIt.ttf') format('truetype'), 
+	url('MillerTextOT-RgIt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MillerTextOT-BdIt';
+	src: url('MillerTextOT-BdIt.eot');
+	src: local('â˜º'), url('MillerTextOT-BdIt.woff') format('woff'), 
+	url('MillerTextOT-BdIt.ttf') format('truetype'), 
+	url('MillerTextOT-BdIt.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
